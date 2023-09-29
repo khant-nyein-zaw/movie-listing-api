@@ -28,6 +28,6 @@ class Movie extends Model
 
     public function getRelatedMovies()
     {
-        return $this->relatedMovies()->get();
+        return $this->relatedMovies()->limit(7)->get();
     }
 }

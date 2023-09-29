@@ -12,7 +12,7 @@ use App\Http\Requests\CommentFormRequest;
 class MovieCommentController extends Controller
 {
     /**
-     * create a new comment for the movie
+     * Create a new comment for the movie
      */
     public function store(CommentFormRequest $request, $movie_id)
     {

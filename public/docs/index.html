@@ -77,17 +77,20 @@
                                                                                 <li class="tocify-item level-2" data-unique="endpoints-POSTapi-register">
                                 <a href="#endpoints-POSTapi-register">POST api/register</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-POSTapi-logout">
-                                <a href="#endpoints-POSTapi-logout">POST api/logout</a>
-                            </li>
                                                                                 <li class="tocify-item level-2" data-unique="endpoints-GETapi-movies">
                                 <a href="#endpoints-GETapi-movies">Display a listing of the resource.</a>
                             </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-movies--movie-">
+                                <a href="#endpoints-GETapi-movies--movie-">Display the specified resource.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-POSTapi-movies--movie--comments">
+                                <a href="#endpoints-POSTapi-movies--movie--comments">create a new comment for the movie</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-POSTapi-logout">
+                                <a href="#endpoints-POSTapi-logout">POST api/logout</a>
+                            </li>
                                                                                 <li class="tocify-item level-2" data-unique="endpoints-POSTapi-movies">
                                 <a href="#endpoints-POSTapi-movies">Store a newly created resource in storage.</a>
-                            </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-movies--id-">
-                                <a href="#endpoints-GETapi-movies--id-">Display the specified resource.</a>
                             </li>
                                                                                 <li class="tocify-item level-2" data-unique="endpoints-PUTapi-movies--id-">
                                 <a href="#endpoints-PUTapi-movies--id-">Update the specified resource in storage.</a>
@@ -106,7 +109,7 @@
     </ul>
 
     <ul class="toc-footer" id="last-updated">
-        <li>Last updated: September 28, 2023</li>
+        <li>Last updated: September 29, 2023</li>
     </ul>
 </div>
 
@@ -145,8 +148,8 @@ You can switch the language used with the tabs at the top right (or from the nav
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"email\": \"assumenda\",
-    \"password\": \"id\"
+    \"email\": \"est\",
+    \"password\": \"earum\"
 }"
 </code></pre></div>
 
@@ -162,8 +165,8 @@ const headers = {
 };
 
 let body = {
-    "email": "assumenda",
-    "password": "id"
+    "email": "est",
+    "password": "earum"
 };
 
 fetch(url, {
@@ -252,10 +255,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="email"                data-endpoint="POSTapi-login"
-               value="assumenda"
+               value="est"
                data-component="body">
     <br>
-<p>Example: <code>assumenda</code></p>
+<p>Example: <code>est</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -263,10 +266,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="password"                data-endpoint="POSTapi-login"
-               value="id"
+               value="earum"
                data-component="body">
     <br>
-<p>Example: <code>id</code></p>
+<p>Example: <code>earum</code></p>
         </div>
         </form>
 
@@ -287,9 +290,9 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"name\": \"nqkbyzaddivglynkxcbsq\",
-    \"email\": \"foconnell@example.net\",
-    \"password\": \";n8)2CgN(\"
+    \"name\": \"ktmwjbsdgmawttnsuqmz\",
+    \"email\": \"devante10@example.net\",
+    \"password\": \"%NZkkw^]Dt9_o\"
 }"
 </code></pre></div>
 
@@ -305,9 +308,9 @@ const headers = {
 };
 
 let body = {
-    "name": "nqkbyzaddivglynkxcbsq",
-    "email": "foconnell@example.net",
-    "password": ";n8)2CgN("
+    "name": "ktmwjbsdgmawttnsuqmz",
+    "email": "devante10@example.net",
+    "password": "%NZkkw^]Dt9_o"
 };
 
 fetch(url, {
@@ -396,10 +399,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="name"                data-endpoint="POSTapi-register"
-               value="nqkbyzaddivglynkxcbsq"
+               value="ktmwjbsdgmawttnsuqmz"
                data-component="body">
     <br>
-<p>Must not be greater than 255 characters. Example: <code>nqkbyzaddivglynkxcbsq</code></p>
+<p>Must not be greater than 255 characters. Example: <code>ktmwjbsdgmawttnsuqmz</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>email</code></b>&nbsp;&nbsp;
@@ -407,10 +410,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="email"                data-endpoint="POSTapi-register"
-               value="foconnell@example.net"
+               value="devante10@example.net"
                data-component="body">
     <br>
-<p>Must be a valid email address. Must not be greater than 255 characters. Example: <code>foconnell@example.net</code></p>
+<p>Must be a valid email address. Must not be greater than 255 characters. Example: <code>devante10@example.net</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -418,10 +421,1023 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="password"                data-endpoint="POSTapi-register"
-               value=";n8)2CgN("
+               value="%NZkkw^]Dt9_o"
                data-component="body">
     <br>
-<p>Must be at least 6 characters. Example: <code>;n8)2CgN(</code></p>
+<p>Must be at least 6 characters. Example: <code>%NZkkw^]Dt9_o</code></p>
+        </div>
+        </form>
+
+                    <h2 id="endpoints-GETapi-movies">Display a listing of the resource.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETapi-movies">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost/api/movies" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/movies"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-movies">
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 59
+access-control-allow-origin: *
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">[
+    {
+        &quot;id&quot;: 2,
+        &quot;title&quot;: &quot;Titanic (1997)&quot;,
+        &quot;summary&quot;: &quot;Consequatur molestiae in non velit et. Sint ducimus ex reprehenderit. Aliquam ex nesciunt ut in.&quot;,
+        &quot;cover_image_url&quot;: null,
+        &quot;cover_image_name&quot;: null,
+        &quot;author&quot;: &quot;James Cameron&quot;,
+        &quot;genres&quot;: &quot;Malika Crona ,Annabel Fay&quot;,
+        &quot;tags&quot;: &quot;Prof. Irma Berge DVM ,Bobby Koelpin Jr.&quot;,
+        &quot;imdb_rating&quot;: 2.3,
+        &quot;created_at&quot;: null,
+        &quot;updated_at&quot;: null,
+        &quot;comments&quot;: []
+    },
+    {
+        &quot;id&quot;: 3,
+        &quot;title&quot;: &quot;The Shawshank Redemption (1994)&quot;,
+        &quot;summary&quot;: &quot;In possimus et sit officiis. Rem eligendi mollitia odio vel expedita voluptate qui mollitia.&quot;,
+        &quot;cover_image_url&quot;: null,
+        &quot;cover_image_name&quot;: null,
+        &quot;author&quot;: &quot;Frank Darabont&quot;,
+        &quot;genres&quot;: &quot;Ryann Abernathy DDS ,Meta Hand&quot;,
+        &quot;tags&quot;: &quot;Luisa Lang ,Fausto Schowalter&quot;,
+        &quot;imdb_rating&quot;: 6.9,
+        &quot;created_at&quot;: null,
+        &quot;updated_at&quot;: null,
+        &quot;comments&quot;: []
+    },
+    {
+        &quot;id&quot;: 4,
+        &quot;title&quot;: &quot;The Dark Knight&quot;,
+        &quot;summary&quot;: &quot;Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae rem eum mollitia ipsam dignissimos tempora hic nam numquam reiciendis quae, enim laborum ducimus perferendis eius placeat aut harum qui. Commodi!&quot;,
+        &quot;cover_image_url&quot;: null,
+        &quot;cover_image_name&quot;: null,
+        &quot;author&quot;: &quot;Chritopher Nolan&quot;,
+        &quot;genres&quot;: &quot;Action, Adventure&quot;,
+        &quot;tags&quot;: &quot;action, christopher nolan movie&quot;,
+        &quot;imdb_rating&quot;: 9.9,
+        &quot;created_at&quot;: null,
+        &quot;updated_at&quot;: &quot;2023-09-29T02:10:43.000000Z&quot;,
+        &quot;comments&quot;: [
+            {
+                &quot;id&quot;: 1,
+                &quot;movie_id&quot;: 4,
+                &quot;commenter_name&quot;: &quot;Khant&quot;,
+                &quot;commenter_email&quot;: &quot;khantzaw@gmail.com&quot;,
+                &quot;comment_text&quot;: &quot;This is the best movie ok !&quot;,
+                &quot;created_at&quot;: &quot;2023-09-29T02:13:14.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2023-09-29T02:13:14.000000Z&quot;
+            }
+        ]
+    },
+    {
+        &quot;id&quot;: 5,
+        &quot;title&quot;: &quot;Schindler&#039;s List (1993)&quot;,
+        &quot;summary&quot;: &quot;Ut et ducimus minima laboriosam unde. Nihil temporibus minus modi. Sit qui voluptate asperiores.&quot;,
+        &quot;cover_image_url&quot;: null,
+        &quot;cover_image_name&quot;: null,
+        &quot;author&quot;: &quot;Steven Spielberg&quot;,
+        &quot;genres&quot;: &quot;Dr. Elena Sauer ,Henry Gorczany&quot;,
+        &quot;tags&quot;: &quot;Hector Morar I ,Bennie Hahn&quot;,
+        &quot;imdb_rating&quot;: 9.9,
+        &quot;created_at&quot;: null,
+        &quot;updated_at&quot;: null,
+        &quot;comments&quot;: []
+    },
+    {
+        &quot;id&quot;: 6,
+        &quot;title&quot;: &quot;Pulp Fiction (1994)&quot;,
+        &quot;summary&quot;: &quot;Adipisci enim est dolore aliquid aut. Voluptatem aperiam accusantium recusandae fuga eos.&quot;,
+        &quot;cover_image_url&quot;: null,
+        &quot;cover_image_name&quot;: null,
+        &quot;author&quot;: &quot;Quentin Tarantino&quot;,
+        &quot;genres&quot;: &quot;Lily Wuckert ,Letha Brekke&quot;,
+        &quot;tags&quot;: &quot;Garrison Jerde PhD ,Delaney Conroy&quot;,
+        &quot;imdb_rating&quot;: 9.3,
+        &quot;created_at&quot;: null,
+        &quot;updated_at&quot;: null,
+        &quot;comments&quot;: []
+    },
+    {
+        &quot;id&quot;: 7,
+        &quot;title&quot;: &quot;Forrest Gump (1994)&quot;,
+        &quot;summary&quot;: &quot;Et aut officiis commodi itaque tempora. Voluptas ut eius ut quo dolor laudantium et.&quot;,
+        &quot;cover_image_url&quot;: null,
+        &quot;cover_image_name&quot;: null,
+        &quot;author&quot;: &quot;Robert Zemeckis&quot;,
+        &quot;genres&quot;: &quot;Lloyd Huel ,Dr. Abelardo Koepp II&quot;,
+        &quot;tags&quot;: &quot;Lucas Schiller ,Prof. Nayeli Dibbert III&quot;,
+        &quot;imdb_rating&quot;: 5.4,
+        &quot;created_at&quot;: null,
+        &quot;updated_at&quot;: null,
+        &quot;comments&quot;: []
+    },
+    {
+        &quot;id&quot;: 8,
+        &quot;title&quot;: &quot;The Matrix (1999)&quot;,
+        &quot;summary&quot;: &quot;Nulla laudantium omnis reiciendis sed sequi. Atque nihil voluptas vitae dicta quod sed iusto natus.&quot;,
+        &quot;cover_image_url&quot;: null,
+        &quot;cover_image_name&quot;: null,
+        &quot;author&quot;: &quot;The Wachowskis&quot;,
+        &quot;genres&quot;: &quot;Carmelo Rippin ,Ms. Palma Lebsack&quot;,
+        &quot;tags&quot;: &quot;Wilfredo Hagenes IV ,Dean Cummings&quot;,
+        &quot;imdb_rating&quot;: 4.8,
+        &quot;created_at&quot;: null,
+        &quot;updated_at&quot;: null,
+        &quot;comments&quot;: []
+    },
+    {
+        &quot;id&quot;: 9,
+        &quot;title&quot;: &quot;Jurassic Park (1993)&quot;,
+        &quot;summary&quot;: &quot;Ut officiis suscipit magni a nam accusamus. Eos itaque sint magnam dicta officia.&quot;,
+        &quot;cover_image_url&quot;: null,
+        &quot;cover_image_name&quot;: null,
+        &quot;author&quot;: &quot;Steven Spielberg&quot;,
+        &quot;genres&quot;: &quot;Murl Lynch ,Kamille Hirthe&quot;,
+        &quot;tags&quot;: &quot;Marjorie Reilly ,Raegan Berge&quot;,
+        &quot;imdb_rating&quot;: 9.9,
+        &quot;created_at&quot;: null,
+        &quot;updated_at&quot;: null,
+        &quot;comments&quot;: []
+    },
+    {
+        &quot;id&quot;: 10,
+        &quot;title&quot;: &quot;Inception (2010)&quot;,
+        &quot;summary&quot;: &quot;Illo sed magni aliquam quidem. Voluptas illo maiores libero nihil. Itaque omnis odit deserunt iste.&quot;,
+        &quot;cover_image_url&quot;: null,
+        &quot;cover_image_name&quot;: null,
+        &quot;author&quot;: &quot;Christopher Nolan&quot;,
+        &quot;genres&quot;: &quot;Isaias Botsford ,Prof. Alyson Schamberger&quot;,
+        &quot;tags&quot;: &quot;Quinn Rau ,Emmie Kshlerin&quot;,
+        &quot;imdb_rating&quot;: 2.1,
+        &quot;created_at&quot;: null,
+        &quot;updated_at&quot;: null,
+        &quot;comments&quot;: []
+    },
+    {
+        &quot;id&quot;: 11,
+        &quot;title&quot;: &quot;Apocalypse Now (1979)&quot;,
+        &quot;summary&quot;: &quot;Et asperiores omnis ut eos maiores non eligendi dolor. Illo sit exercitationem rem corrupti ipsum.&quot;,
+        &quot;cover_image_url&quot;: null,
+        &quot;cover_image_name&quot;: null,
+        &quot;author&quot;: &quot;Francis Ford Coppola&quot;,
+        &quot;genres&quot;: &quot;Vergie Muller,Eliane Swaniawski&quot;,
+        &quot;tags&quot;: &quot;Mrs. Elta Murphy V,Obie Nitzsche&quot;,
+        &quot;imdb_rating&quot;: 3.2,
+        &quot;created_at&quot;: null,
+        &quot;updated_at&quot;: null,
+        &quot;comments&quot;: []
+    },
+    {
+        &quot;id&quot;: 12,
+        &quot;title&quot;: &quot;Avatar (2009)&quot;,
+        &quot;summary&quot;: &quot;Illum placeat aut aliquid cupiditate error. Perferendis unde unde ut et et labore.&quot;,
+        &quot;cover_image_url&quot;: null,
+        &quot;cover_image_name&quot;: null,
+        &quot;author&quot;: &quot;James Cameron&quot;,
+        &quot;genres&quot;: &quot;Tania Considine,Olin Howe&quot;,
+        &quot;tags&quot;: &quot;Keely Stehr,Celine Wiza&quot;,
+        &quot;imdb_rating&quot;: 7.1,
+        &quot;created_at&quot;: null,
+        &quot;updated_at&quot;: null,
+        &quot;comments&quot;: []
+    },
+    {
+        &quot;id&quot;: 13,
+        &quot;title&quot;: &quot;The Green Mile (1999)&quot;,
+        &quot;summary&quot;: &quot;Cum impedit et soluta sequi veniam voluptas magnam. Minus et quis enim tenetur esse assumenda.&quot;,
+        &quot;cover_image_url&quot;: null,
+        &quot;cover_image_name&quot;: null,
+        &quot;author&quot;: &quot;Frank Darabont&quot;,
+        &quot;genres&quot;: &quot;Dr. Lori Huel,Patricia West&quot;,
+        &quot;tags&quot;: &quot;Fannie Ziemann DDS,Alta Klocko&quot;,
+        &quot;imdb_rating&quot;: 1.4,
+        &quot;created_at&quot;: null,
+        &quot;updated_at&quot;: null,
+        &quot;comments&quot;: []
+    },
+    {
+        &quot;id&quot;: 14,
+        &quot;title&quot;: &quot;Interstellar (2014)&quot;,
+        &quot;summary&quot;: &quot;Minus qui adipisci harum facere. Aut vel quos deleniti eius. Aut amet qui non assumenda soluta est.&quot;,
+        &quot;cover_image_url&quot;: null,
+        &quot;cover_image_name&quot;: null,
+        &quot;author&quot;: &quot;Christopher Nolan&quot;,
+        &quot;genres&quot;: &quot;Marcelle Sauer,Antonetta Baumbach&quot;,
+        &quot;tags&quot;: &quot;Mikayla Halvorson,Dr. Nico Pouros III&quot;,
+        &quot;imdb_rating&quot;: 3.5,
+        &quot;created_at&quot;: null,
+        &quot;updated_at&quot;: null,
+        &quot;comments&quot;: []
+    },
+    {
+        &quot;id&quot;: 15,
+        &quot;title&quot;: &quot;E.T. the Extra-Terrestrial (1982)&quot;,
+        &quot;summary&quot;: &quot;Odio neque est fugit voluptatem dolorum. Quia autem nulla eveniet quia. Minus est neque quae.&quot;,
+        &quot;cover_image_url&quot;: null,
+        &quot;cover_image_name&quot;: null,
+        &quot;author&quot;: &quot;Steven Spielberg&quot;,
+        &quot;genres&quot;: &quot;Bridgette Osinski,Myles Blanda&quot;,
+        &quot;tags&quot;: &quot;Felicia Padberg,Prof. Domenico Reinger DDS&quot;,
+        &quot;imdb_rating&quot;: 7.4,
+        &quot;created_at&quot;: null,
+        &quot;updated_at&quot;: null,
+        &quot;comments&quot;: []
+    },
+    {
+        &quot;id&quot;: 16,
+        &quot;title&quot;: &quot;Django Unchained (2012)&quot;,
+        &quot;summary&quot;: &quot;Dolorum non iste et assumenda non. Ut assumenda labore provident iusto quasi.&quot;,
+        &quot;cover_image_url&quot;: null,
+        &quot;cover_image_name&quot;: null,
+        &quot;author&quot;: &quot;Quentin Tarantino&quot;,
+        &quot;genres&quot;: &quot;Alvena Hand,Lauren Dach&quot;,
+        &quot;tags&quot;: &quot;Aiden Upton,Dr. Leanna McLaughlin III&quot;,
+        &quot;imdb_rating&quot;: 2.6,
+        &quot;created_at&quot;: null,
+        &quot;updated_at&quot;: null,
+        &quot;comments&quot;: []
+    },
+    {
+        &quot;id&quot;: 17,
+        &quot;title&quot;: &quot;Cast Away (2000)&quot;,
+        &quot;summary&quot;: &quot;Necessitatibus quasi mollitia aut omnis quae pariatur velit. Nisi ratione atque aut facere error.&quot;,
+        &quot;cover_image_url&quot;: null,
+        &quot;cover_image_name&quot;: null,
+        &quot;author&quot;: &quot;Robert Zemeckis&quot;,
+        &quot;genres&quot;: &quot;Eda Lind,Dagmar Kautzer&quot;,
+        &quot;tags&quot;: &quot;Thad Hill,Jeramy Hand&quot;,
+        &quot;imdb_rating&quot;: 2,
+        &quot;created_at&quot;: null,
+        &quot;updated_at&quot;: null,
+        &quot;comments&quot;: []
+    },
+    {
+        &quot;id&quot;: 18,
+        &quot;title&quot;: &quot;The Matrix (1999)&quot;,
+        &quot;summary&quot;: &quot;Harum rerum nesciunt aliquid eveniet maiores et. Placeat minima est ut dolor.&quot;,
+        &quot;cover_image_url&quot;: null,
+        &quot;cover_image_name&quot;: null,
+        &quot;author&quot;: &quot;The Wachowskis&quot;,
+        &quot;genres&quot;: &quot;Kariane Abbott Sr.,Prof. Sierra Johns&quot;,
+        &quot;tags&quot;: &quot;Idella Glover,Lura Marvin MD&quot;,
+        &quot;imdb_rating&quot;: 8.4,
+        &quot;created_at&quot;: null,
+        &quot;updated_at&quot;: null,
+        &quot;comments&quot;: []
+    },
+    {
+        &quot;id&quot;: 19,
+        &quot;title&quot;: &quot;Saving Private Ryan (1998)&quot;,
+        &quot;summary&quot;: &quot;Aut id in voluptatum delectus iste at. Id in adipisci id totam. Aut voluptatibus ipsum et quo.&quot;,
+        &quot;cover_image_url&quot;: null,
+        &quot;cover_image_name&quot;: null,
+        &quot;author&quot;: &quot;Steven Spielberg&quot;,
+        &quot;genres&quot;: &quot;Mrs. Hanna Bosco DVM,Dr. Dylan Block&quot;,
+        &quot;tags&quot;: &quot;Prof. Jaycee Stehr III,Dr. Aracely Padberg Jr.&quot;,
+        &quot;imdb_rating&quot;: 7.4,
+        &quot;created_at&quot;: null,
+        &quot;updated_at&quot;: null,
+        &quot;comments&quot;: []
+    },
+    {
+        &quot;id&quot;: 20,
+        &quot;title&quot;: &quot;Dunkirk (2017)&quot;,
+        &quot;summary&quot;: &quot;Et totam magni iste temporibus eum. Et eaque amet voluptatem omnis dolores et.&quot;,
+        &quot;cover_image_url&quot;: null,
+        &quot;cover_image_name&quot;: null,
+        &quot;author&quot;: &quot;Christopher Nolan&quot;,
+        &quot;genres&quot;: &quot;Merlin Gerlach,Susie Murray&quot;,
+        &quot;tags&quot;: &quot;Elise Becker,Hans O&#039;Kon&quot;,
+        &quot;imdb_rating&quot;: 7.4,
+        &quot;created_at&quot;: null,
+        &quot;updated_at&quot;: null,
+        &quot;comments&quot;: []
+    },
+    {
+        &quot;id&quot;: 21,
+        &quot;title&quot;: &quot;Mr. Bean&quot;,
+        &quot;summary&quot;: &quot;If I let you go, I would never know&quot;,
+        &quot;cover_image_url&quot;: &quot;http://localhost:8000/storage/65162965ea1a4_v58-2456211.jpg&quot;,
+        &quot;cover_image_name&quot;: &quot;65162965ea1a4_v58-2456211.jpg&quot;,
+        &quot;author&quot;: &quot;Christopher Nolan&quot;,
+        &quot;genres&quot;: &quot;Comedy,Drama&quot;,
+        &quot;tags&quot;: &quot;Comedy movie&quot;,
+        &quot;imdb_rating&quot;: 7.6,
+        &quot;created_at&quot;: &quot;2023-09-29T01:33:26.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2023-09-29T01:33:26.000000Z&quot;,
+        &quot;comments&quot;: []
+    },
+    {
+        &quot;id&quot;: 22,
+        &quot;title&quot;: &quot;Following (1998)&quot;,
+        &quot;summary&quot;: &quot;Explicabo cupiditate eum doloremque sapiente voluptate. Illo architecto a debitis perspiciatis.&quot;,
+        &quot;cover_image_url&quot;: null,
+        &quot;cover_image_name&quot;: null,
+        &quot;author&quot;: &quot;Francis Ford Coppola&quot;,
+        &quot;genres&quot;: &quot;Hiram Rice,Eleonore Marvin&quot;,
+        &quot;tags&quot;: &quot;Ms. Rylee Wintheiser,Miss Estefania Eichmann Jr.&quot;,
+        &quot;imdb_rating&quot;: 2.6,
+        &quot;created_at&quot;: null,
+        &quot;updated_at&quot;: null,
+        &quot;comments&quot;: []
+    },
+    {
+        &quot;id&quot;: 23,
+        &quot;title&quot;: &quot;Memento (2000)&quot;,
+        &quot;summary&quot;: &quot;Ut est hic beatae et autem et. At quasi rerum atque deserunt ea voluptas.&quot;,
+        &quot;cover_image_url&quot;: null,
+        &quot;cover_image_name&quot;: null,
+        &quot;author&quot;: &quot;James Cameron&quot;,
+        &quot;genres&quot;: &quot;Sincere Lemke,Virginie Dach&quot;,
+        &quot;tags&quot;: &quot;Jermain O&#039;Kon I,Ms. Verdie Lynch V&quot;,
+        &quot;imdb_rating&quot;: 8,
+        &quot;created_at&quot;: null,
+        &quot;updated_at&quot;: null,
+        &quot;comments&quot;: []
+    },
+    {
+        &quot;id&quot;: 24,
+        &quot;title&quot;: &quot;The Prestige (2006)&quot;,
+        &quot;summary&quot;: &quot;Et nihil beatae ut deleniti ab aut. Laudantium ea assumenda laudantium aut. Voluptas est a et in.&quot;,
+        &quot;cover_image_url&quot;: null,
+        &quot;cover_image_name&quot;: null,
+        &quot;author&quot;: &quot;Frank Darabont&quot;,
+        &quot;genres&quot;: &quot;Rosalind Wyman,Marielle Kirlin DDS&quot;,
+        &quot;tags&quot;: &quot;Evie Johnston,Miss Caroline Schiller V&quot;,
+        &quot;imdb_rating&quot;: 9.5,
+        &quot;created_at&quot;: null,
+        &quot;updated_at&quot;: null,
+        &quot;comments&quot;: []
+    },
+    {
+        &quot;id&quot;: 25,
+        &quot;title&quot;: &quot;Batman Begins (2005)&quot;,
+        &quot;summary&quot;: &quot;Et ipsam vitae sapiente eius. Ut corrupti vero repellat dicta illo.&quot;,
+        &quot;cover_image_url&quot;: null,
+        &quot;cover_image_name&quot;: null,
+        &quot;author&quot;: &quot;Christopher Nolan&quot;,
+        &quot;genres&quot;: &quot;Aurelie Ryan Jr.,Abner Lindgren&quot;,
+        &quot;tags&quot;: &quot;Prof. Timmy Fadel Sr.,Davonte Waelchi&quot;,
+        &quot;imdb_rating&quot;: 1.5,
+        &quot;created_at&quot;: null,
+        &quot;updated_at&quot;: null,
+        &quot;comments&quot;: []
+    },
+    {
+        &quot;id&quot;: 26,
+        &quot;title&quot;: &quot;The Dark Knight (2008)&quot;,
+        &quot;summary&quot;: &quot;Nesciunt accusantium omnis sunt rem et molestiae. Sapiente odit et non dolorem in.&quot;,
+        &quot;cover_image_url&quot;: null,
+        &quot;cover_image_name&quot;: null,
+        &quot;author&quot;: &quot;Steven Spielberg&quot;,
+        &quot;genres&quot;: &quot;Autumn Muller DVM,Prof. Otilia Lindgren&quot;,
+        &quot;tags&quot;: &quot;Prof. Jayme Reichel,Darron Hane&quot;,
+        &quot;imdb_rating&quot;: 5.1,
+        &quot;created_at&quot;: null,
+        &quot;updated_at&quot;: null,
+        &quot;comments&quot;: []
+    },
+    {
+        &quot;id&quot;: 27,
+        &quot;title&quot;: &quot;Inception (2010)&quot;,
+        &quot;summary&quot;: &quot;Voluptatibus ad suscipit officiis sint cum quam. Soluta ut qui asperiores quos voluptatum alias.&quot;,
+        &quot;cover_image_url&quot;: null,
+        &quot;cover_image_name&quot;: null,
+        &quot;author&quot;: &quot;Quentin Tarantino&quot;,
+        &quot;genres&quot;: &quot;Oral Turner,Nayeli Johns IV&quot;,
+        &quot;tags&quot;: &quot;Eloy Carroll,Annabel Lakin&quot;,
+        &quot;imdb_rating&quot;: 4,
+        &quot;created_at&quot;: null,
+        &quot;updated_at&quot;: null,
+        &quot;comments&quot;: []
+    },
+    {
+        &quot;id&quot;: 28,
+        &quot;title&quot;: &quot;The Dark Knight Rises (2012)&quot;,
+        &quot;summary&quot;: &quot;Ut dolore sit aut. Quisquam commodi magnam maiores quasi enim. Dolorem aut ratione nobis ex hic.&quot;,
+        &quot;cover_image_url&quot;: null,
+        &quot;cover_image_name&quot;: null,
+        &quot;author&quot;: &quot;Robert Zemeckis&quot;,
+        &quot;genres&quot;: &quot;Kacey Casper,Maverick O&#039;Conner&quot;,
+        &quot;tags&quot;: &quot;Hermann Farrell,Ms. Alberta Watsica&quot;,
+        &quot;imdb_rating&quot;: 6.9,
+        &quot;created_at&quot;: null,
+        &quot;updated_at&quot;: null,
+        &quot;comments&quot;: []
+    },
+    {
+        &quot;id&quot;: 29,
+        &quot;title&quot;: &quot;Interstellar (2014)&quot;,
+        &quot;summary&quot;: &quot;Ducimus aut quas esse sequi omnis et. Dignissimos et delectus nulla. Rem incidunt unde quo.&quot;,
+        &quot;cover_image_url&quot;: null,
+        &quot;cover_image_name&quot;: null,
+        &quot;author&quot;: &quot;The Wachowskis&quot;,
+        &quot;genres&quot;: &quot;Dr. Abe Rohan V,Diana Rutherford&quot;,
+        &quot;tags&quot;: &quot;Carolyn Carter,Zetta Dicki&quot;,
+        &quot;imdb_rating&quot;: 6.3,
+        &quot;created_at&quot;: null,
+        &quot;updated_at&quot;: null,
+        &quot;comments&quot;: []
+    },
+    {
+        &quot;id&quot;: 30,
+        &quot;title&quot;: &quot;Dunkirk (2017)&quot;,
+        &quot;summary&quot;: &quot;Sunt ipsum ut voluptatibus. Est ipsa odio quia. Eligendi magnam inventore soluta.&quot;,
+        &quot;cover_image_url&quot;: null,
+        &quot;cover_image_name&quot;: null,
+        &quot;author&quot;: &quot;Steven Spielberg&quot;,
+        &quot;genres&quot;: &quot;Trever Quitzon,Jean Medhurst&quot;,
+        &quot;tags&quot;: &quot;Maximo Weissnat,Willa Rippin&quot;,
+        &quot;imdb_rating&quot;: 2.3,
+        &quot;created_at&quot;: null,
+        &quot;updated_at&quot;: null,
+        &quot;comments&quot;: []
+    },
+    {
+        &quot;id&quot;: 31,
+        &quot;title&quot;: &quot;Tenet (2020)&quot;,
+        &quot;summary&quot;: &quot;Sed vitae quas molestias eveniet. Ipsum qui ipsam in ab sed. Porro qui deserunt id non.&quot;,
+        &quot;cover_image_url&quot;: null,
+        &quot;cover_image_name&quot;: null,
+        &quot;author&quot;: &quot;Christopher Nolan&quot;,
+        &quot;genres&quot;: &quot;Dr. Wilburn Borer Sr.,Miss Lori Hahn&quot;,
+        &quot;tags&quot;: &quot;Kiley Stark,Willa Grady Jr.&quot;,
+        &quot;imdb_rating&quot;: 4.1,
+        &quot;created_at&quot;: null,
+        &quot;updated_at&quot;: null,
+        &quot;comments&quot;: []
+    },
+    {
+        &quot;id&quot;: 32,
+        &quot;title&quot;: &quot;Following (1998)&quot;,
+        &quot;summary&quot;: &quot;Tempora aut aspernatur repudiandae. Sint accusamus provident quibusdam officia pariatur sint nobis.&quot;,
+        &quot;cover_image_url&quot;: null,
+        &quot;cover_image_name&quot;: null,
+        &quot;author&quot;: &quot;Christopher Nolan&quot;,
+        &quot;genres&quot;: &quot;Shannon Mosciski,Alf Tremblay&quot;,
+        &quot;tags&quot;: &quot;Eulah Lehner,Hanna Blick&quot;,
+        &quot;imdb_rating&quot;: 5.2,
+        &quot;created_at&quot;: null,
+        &quot;updated_at&quot;: null,
+        &quot;comments&quot;: []
+    },
+    {
+        &quot;id&quot;: 33,
+        &quot;title&quot;: &quot;Memento (2000)&quot;,
+        &quot;summary&quot;: &quot;Inventore sit cumque aliquam omnis. Omnis perspiciatis exercitationem ab quisquam quam quia.&quot;,
+        &quot;cover_image_url&quot;: null,
+        &quot;cover_image_name&quot;: null,
+        &quot;author&quot;: &quot;Christopher Nolan&quot;,
+        &quot;genres&quot;: &quot;Omer Konopelski,Aidan Towne&quot;,
+        &quot;tags&quot;: &quot;Raymond Koch,Deonte Legros PhD&quot;,
+        &quot;imdb_rating&quot;: 5.1,
+        &quot;created_at&quot;: null,
+        &quot;updated_at&quot;: null,
+        &quot;comments&quot;: []
+    },
+    {
+        &quot;id&quot;: 34,
+        &quot;title&quot;: &quot;The Prestige (2006)&quot;,
+        &quot;summary&quot;: &quot;Rem et ut ipsum. Consequatur est et voluptatem aliquid et.&quot;,
+        &quot;cover_image_url&quot;: null,
+        &quot;cover_image_name&quot;: null,
+        &quot;author&quot;: &quot;Christopher Nolan&quot;,
+        &quot;genres&quot;: &quot;Grant Jakubowski,Cara Streich&quot;,
+        &quot;tags&quot;: &quot;Mrs. Lola Smith,Rebeca Mann&quot;,
+        &quot;imdb_rating&quot;: 6,
+        &quot;created_at&quot;: null,
+        &quot;updated_at&quot;: null,
+        &quot;comments&quot;: []
+    },
+    {
+        &quot;id&quot;: 35,
+        &quot;title&quot;: &quot;Batman Begins (2005)&quot;,
+        &quot;summary&quot;: &quot;Quas consequatur placeat pariatur qui et accusamus. Minus sed et assumenda sint.&quot;,
+        &quot;cover_image_url&quot;: null,
+        &quot;cover_image_name&quot;: null,
+        &quot;author&quot;: &quot;Christopher Nolan&quot;,
+        &quot;genres&quot;: &quot;Kendrick Lueilwitz,Casper Spencer&quot;,
+        &quot;tags&quot;: &quot;Aniya Cummings,Brad Nikolaus&quot;,
+        &quot;imdb_rating&quot;: 9.7,
+        &quot;created_at&quot;: null,
+        &quot;updated_at&quot;: null,
+        &quot;comments&quot;: []
+    },
+    {
+        &quot;id&quot;: 36,
+        &quot;title&quot;: &quot;The Dark Knight (2008)&quot;,
+        &quot;summary&quot;: &quot;Id labore iure rem sed est voluptatum soluta. Quis recusandae asperiores qui officia.&quot;,
+        &quot;cover_image_url&quot;: null,
+        &quot;cover_image_name&quot;: null,
+        &quot;author&quot;: &quot;Christopher Nolan&quot;,
+        &quot;genres&quot;: &quot;Ernestina Botsford V,Stanford Moen&quot;,
+        &quot;tags&quot;: &quot;Luigi Wisoky,Brain Lockman&quot;,
+        &quot;imdb_rating&quot;: 9.9,
+        &quot;created_at&quot;: null,
+        &quot;updated_at&quot;: null,
+        &quot;comments&quot;: []
+    },
+    {
+        &quot;id&quot;: 37,
+        &quot;title&quot;: &quot;Inception (2010)&quot;,
+        &quot;summary&quot;: &quot;Nulla magni praesentium nobis id optio. Iusto unde soluta est temporibus consectetur qui nisi.&quot;,
+        &quot;cover_image_url&quot;: null,
+        &quot;cover_image_name&quot;: null,
+        &quot;author&quot;: &quot;Christopher Nolan&quot;,
+        &quot;genres&quot;: &quot;Jillian Lemke,Miss Audrey Conn&quot;,
+        &quot;tags&quot;: &quot;Ron Gislason,Milton Bruen&quot;,
+        &quot;imdb_rating&quot;: 4.6,
+        &quot;created_at&quot;: null,
+        &quot;updated_at&quot;: null,
+        &quot;comments&quot;: []
+    },
+    {
+        &quot;id&quot;: 38,
+        &quot;title&quot;: &quot;The Dark Knight Rises (2012)&quot;,
+        &quot;summary&quot;: &quot;Magnam voluptatem aut et debitis labore et. Laborum sit qui commodi.&quot;,
+        &quot;cover_image_url&quot;: null,
+        &quot;cover_image_name&quot;: null,
+        &quot;author&quot;: &quot;Christopher Nolan&quot;,
+        &quot;genres&quot;: &quot;Prof. Weston Pouros I,Mr. Devan Parisian MD&quot;,
+        &quot;tags&quot;: &quot;Patrick Ward,Prof. Heaven Bashirian&quot;,
+        &quot;imdb_rating&quot;: 1.7,
+        &quot;created_at&quot;: null,
+        &quot;updated_at&quot;: null,
+        &quot;comments&quot;: []
+    },
+    {
+        &quot;id&quot;: 39,
+        &quot;title&quot;: &quot;Interstellar (2014)&quot;,
+        &quot;summary&quot;: &quot;Excepturi consequatur expedita dolor maiores laudantium sit voluptas. Reiciendis est sapiente in.&quot;,
+        &quot;cover_image_url&quot;: null,
+        &quot;cover_image_name&quot;: null,
+        &quot;author&quot;: &quot;Christopher Nolan&quot;,
+        &quot;genres&quot;: &quot;Florencio Romaguera,Harley Orn&quot;,
+        &quot;tags&quot;: &quot;Erna Cartwright,Vergie Collier&quot;,
+        &quot;imdb_rating&quot;: 8.3,
+        &quot;created_at&quot;: null,
+        &quot;updated_at&quot;: null,
+        &quot;comments&quot;: []
+    },
+    {
+        &quot;id&quot;: 40,
+        &quot;title&quot;: &quot;Dunkirk (2017)&quot;,
+        &quot;summary&quot;: &quot;Sapiente delectus qui iure est facilis. Rerum voluptatibus laborum voluptatem sit.&quot;,
+        &quot;cover_image_url&quot;: null,
+        &quot;cover_image_name&quot;: null,
+        &quot;author&quot;: &quot;Christopher Nolan&quot;,
+        &quot;genres&quot;: &quot;Mrs. Bianka Simonis,Mr. Leonel Roob&quot;,
+        &quot;tags&quot;: &quot;Mr. Felton Considine III,Idella Haag&quot;,
+        &quot;imdb_rating&quot;: 6.8,
+        &quot;created_at&quot;: null,
+        &quot;updated_at&quot;: null,
+        &quot;comments&quot;: []
+    },
+    {
+        &quot;id&quot;: 41,
+        &quot;title&quot;: &quot;Tenet (2020)&quot;,
+        &quot;summary&quot;: &quot;Debitis et illo voluptas minus. Rerum illum in sint. Sit eaque ducimus aperiam facere quos.&quot;,
+        &quot;cover_image_url&quot;: null,
+        &quot;cover_image_name&quot;: null,
+        &quot;author&quot;: &quot;Christopher Nolan&quot;,
+        &quot;genres&quot;: &quot;Keon Spinka,Lura Armstrong&quot;,
+        &quot;tags&quot;: &quot;Thea Watsica,Alexa Deckow&quot;,
+        &quot;imdb_rating&quot;: 6.7,
+        &quot;created_at&quot;: null,
+        &quot;updated_at&quot;: null,
+        &quot;comments&quot;: []
+    }
+]</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-movies" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-movies"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-movies"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-movies" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-movies">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-movies" data-method="GET"
+      data-path="api/movies"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-movies', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-movies"
+                    onclick="tryItOut('GETapi-movies');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-movies"
+                    onclick="cancelTryOut('GETapi-movies');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-movies"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/movies</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-movies"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-movies"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        </form>
+
+                    <h2 id="endpoints-GETapi-movies--movie-">Display the specified resource.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETapi-movies--movie-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost/api/movies/2" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/movies/2"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-movies--movie-">
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 58
+access-control-allow-origin: *
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;data&quot;: {
+        &quot;id&quot;: 2,
+        &quot;title&quot;: &quot;Titanic (1997)&quot;,
+        &quot;summary&quot;: &quot;Consequatur molestiae in non velit et. Sint ducimus ex reprehenderit. Aliquam ex nesciunt ut in.&quot;,
+        &quot;cover_image&quot;: null,
+        &quot;cover_image_url&quot;: null,
+        &quot;author&quot;: &quot;James Cameron&quot;,
+        &quot;genres&quot;: &quot;Malika Crona ,Annabel Fay&quot;,
+        &quot;tags&quot;: &quot;Prof. Irma Berge DVM ,Bobby Koelpin Jr.&quot;,
+        &quot;imdb_rating&quot;: 2.3,
+        &quot;pdf_download_link&quot;: &quot;http://localhost/movies/2/download-pdf&quot;,
+        &quot;related_movies&quot;: [],
+        &quot;comments&quot;: []
+    }
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-movies--movie-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-movies--movie-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-movies--movie-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-movies--movie-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-movies--movie-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-movies--movie-" data-method="GET"
+      data-path="api/movies/{movie}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-movies--movie-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-movies--movie-"
+                    onclick="tryItOut('GETapi-movies--movie-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-movies--movie-"
+                    onclick="cancelTryOut('GETapi-movies--movie-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-movies--movie-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/movies/{movie}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-movies--movie-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-movies--movie-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>movie</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="movie"                data-endpoint="GETapi-movies--movie-"
+               value="2"
+               data-component="url">
+    <br>
+<p>The movie. Example: <code>2</code></p>
+            </div>
+                    </form>
+
+                    <h2 id="endpoints-POSTapi-movies--movie--comments">create a new comment for the movie</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-POSTapi-movies--movie--comments">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request POST \
+    "http://localhost/api/movies/2/comments" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"commenter_name\": \"qxpwzusxrjlgfyvjhusadsyre\",
+    \"commenter_email\": \"bkohler@example.net\",
+    \"comment_text\": \"eius\"
+}"
+</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/movies/2/comments"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "commenter_name": "qxpwzusxrjlgfyvjhusadsyre",
+    "commenter_email": "bkohler@example.net",
+    "comment_text": "eius"
+};
+
+fetch(url, {
+    method: "POST",
+    headers,
+    body: JSON.stringify(body),
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-POSTapi-movies--movie--comments">
+</span>
+<span id="execution-results-POSTapi-movies--movie--comments" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-POSTapi-movies--movie--comments"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-POSTapi-movies--movie--comments"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-POSTapi-movies--movie--comments" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTapi-movies--movie--comments">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-POSTapi-movies--movie--comments" data-method="POST"
+      data-path="api/movies/{movie}/comments"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('POSTapi-movies--movie--comments', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-POSTapi-movies--movie--comments"
+                    onclick="tryItOut('POSTapi-movies--movie--comments');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-POSTapi-movies--movie--comments"
+                    onclick="cancelTryOut('POSTapi-movies--movie--comments');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-POSTapi-movies--movie--comments"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-black">POST</small>
+            <b><code>api/movies/{movie}/comments</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="POSTapi-movies--movie--comments"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="POSTapi-movies--movie--comments"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>movie</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="movie"                data-endpoint="POSTapi-movies--movie--comments"
+               value="2"
+               data-component="url">
+    <br>
+<p>The movie. Example: <code>2</code></p>
+            </div>
+                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>commenter_name</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="commenter_name"                data-endpoint="POSTapi-movies--movie--comments"
+               value="qxpwzusxrjlgfyvjhusadsyre"
+               data-component="body">
+    <br>
+<p>Must not be greater than 255 characters. Example: <code>qxpwzusxrjlgfyvjhusadsyre</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>commenter_email</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="commenter_email"                data-endpoint="POSTapi-movies--movie--comments"
+               value="bkohler@example.net"
+               data-component="body">
+    <br>
+<p>Must be a valid email address. Must not be greater than 255 characters. Example: <code>bkohler@example.net</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>comment_text</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="comment_text"                data-endpoint="POSTapi-movies--movie--comments"
+               value="eius"
+               data-component="body">
+    <br>
+<p>Example: <code>eius</code></p>
         </div>
         </form>
 
@@ -533,130 +1549,6 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </div>
                         </form>
 
-                    <h2 id="endpoints-GETapi-movies">Display a listing of the resource.</h2>
-
-<p>
-</p>
-
-
-
-<span id="example-requests-GETapi-movies">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/movies" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/movies"
-);
-
-const headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-fetch(url, {
-    method: "GET",
-    headers,
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-GETapi-movies">
-            <blockquote>
-            <p>Example response (401):</p>
-        </blockquote>
-                <details class="annotation">
-            <summary style="cursor: pointer;">
-                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
-            </summary>
-            <pre><code class="language-http">cache-control: no-cache, private
-content-type: application/json
-access-control-allow-origin: *
- </code></pre></details>         <pre>
-
-<code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;Unauthenticated.&quot;
-}</code>
- </pre>
-    </span>
-<span id="execution-results-GETapi-movies" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-GETapi-movies"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-GETapi-movies"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-GETapi-movies" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETapi-movies">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-GETapi-movies" data-method="GET"
-      data-path="api/movies"
-      data-authed="0"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('GETapi-movies', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-GETapi-movies"
-                    onclick="tryItOut('GETapi-movies');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-GETapi-movies"
-                    onclick="cancelTryOut('GETapi-movies');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-GETapi-movies"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-green">GET</small>
-            <b><code>api/movies</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="GETapi-movies"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="GETapi-movies"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        </form>
-
                     <h2 id="endpoints-POSTapi-movies">Store a newly created resource in storage.</h2>
 
 <p>
@@ -674,12 +1566,12 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"title\": \"vel\",
-    \"summary\": \"quas\",
-    \"author\": \"aut\",
+    \"title\": \"yatbitiqfczsfebb\",
+    \"summary\": \"delectus\",
+    \"author\": \"bnspokpijhownmqmrf\",
     \"genres\": [],
     \"tags\": [],
-    \"imdb_rating\": \"enim\"
+    \"imdb_rating\": \"labore\"
 }"
 </code></pre></div>
 
@@ -695,12 +1587,12 @@ const headers = {
 };
 
 let body = {
-    "title": "vel",
-    "summary": "quas",
-    "author": "aut",
+    "title": "yatbitiqfczsfebb",
+    "summary": "delectus",
+    "author": "bnspokpijhownmqmrf",
     "genres": [],
     "tags": [],
-    "imdb_rating": "enim"
+    "imdb_rating": "labore"
 };
 
 fetch(url, {
@@ -789,10 +1681,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="title"                data-endpoint="POSTapi-movies"
-               value="vel"
+               value="yatbitiqfczsfebb"
                data-component="body">
     <br>
-<p>Example: <code>vel</code></p>
+<p>Must not be greater than 255 characters. Example: <code>yatbitiqfczsfebb</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>summary</code></b>&nbsp;&nbsp;
@@ -800,10 +1692,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="summary"                data-endpoint="POSTapi-movies"
-               value="quas"
+               value="delectus"
                data-component="body">
     <br>
-<p>Example: <code>quas</code></p>
+<p>Example: <code>delectus</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>cover_image</code></b>&nbsp;&nbsp;
@@ -822,10 +1714,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="author"                data-endpoint="POSTapi-movies"
-               value="aut"
+               value="bnspokpijhownmqmrf"
                data-component="body">
     <br>
-<p>Example: <code>aut</code></p>
+<p>Must not be greater than 255 characters. Example: <code>bnspokpijhownmqmrf</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>genres</code></b>&nbsp;&nbsp;
@@ -855,148 +1747,12 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="imdb_rating"                data-endpoint="POSTapi-movies"
-               value="enim"
+               value="labore"
                data-component="body">
     <br>
-<p>Example: <code>enim</code></p>
+<p>Example: <code>labore</code></p>
         </div>
         </form>
-
-                    <h2 id="endpoints-GETapi-movies--id-">Display the specified resource.</h2>
-
-<p>
-</p>
-
-
-
-<span id="example-requests-GETapi-movies--id-">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/movies/est" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/movies/est"
-);
-
-const headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-fetch(url, {
-    method: "GET",
-    headers,
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-GETapi-movies--id-">
-            <blockquote>
-            <p>Example response (401):</p>
-        </blockquote>
-                <details class="annotation">
-            <summary style="cursor: pointer;">
-                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
-            </summary>
-            <pre><code class="language-http">cache-control: no-cache, private
-content-type: application/json
-access-control-allow-origin: *
- </code></pre></details>         <pre>
-
-<code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;Unauthenticated.&quot;
-}</code>
- </pre>
-    </span>
-<span id="execution-results-GETapi-movies--id-" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-GETapi-movies--id-"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-GETapi-movies--id-"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-GETapi-movies--id-" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETapi-movies--id-">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-GETapi-movies--id-" data-method="GET"
-      data-path="api/movies/{id}"
-      data-authed="0"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('GETapi-movies--id-', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-GETapi-movies--id-"
-                    onclick="tryItOut('GETapi-movies--id-');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-GETapi-movies--id-"
-                    onclick="cancelTryOut('GETapi-movies--id-');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-GETapi-movies--id-"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-green">GET</small>
-            <b><code>api/movies/{id}</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="GETapi-movies--id-"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="GETapi-movies--id-"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
-                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>id</code></b>&nbsp;&nbsp;
-<small>string</small>&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="id"                data-endpoint="GETapi-movies--id-"
-               value="est"
-               data-component="url">
-    <br>
-<p>The ID of the movie. Example: <code>est</code></p>
-            </div>
-                    </form>
 
                     <h2 id="endpoints-PUTapi-movies--id-">Update the specified resource in storage.</h2>
 
@@ -1011,23 +1767,23 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
-    "http://localhost/api/movies/in" \
+    "http://localhost/api/movies/2" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"title\": \"ducimus\",
-    \"summary\": \"eius\",
-    \"author\": \"vel\",
+    \"title\": \"ahbciuxclzqbogrk\",
+    \"summary\": \"qui\",
+    \"author\": \"iwgnus\",
     \"genres\": [],
     \"tags\": [],
-    \"imdb_rating\": \"at\"
+    \"imdb_rating\": \"sit\"
 }"
 </code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/movies/in"
+    "http://localhost/api/movies/2"
 );
 
 const headers = {
@@ -1036,12 +1792,12 @@ const headers = {
 };
 
 let body = {
-    "title": "ducimus",
-    "summary": "eius",
-    "author": "vel",
+    "title": "ahbciuxclzqbogrk",
+    "summary": "qui",
+    "author": "iwgnus",
     "genres": [],
     "tags": [],
-    "imdb_rating": "at"
+    "imdb_rating": "sit"
 };
 
 fetch(url, {
@@ -1130,14 +1886,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
                         <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>id</code></b>&nbsp;&nbsp;
-<small>string</small>&nbsp;
+<small>integer</small>&nbsp;
  &nbsp;
-                <input type="text" style="display: none"
-                              name="id"                data-endpoint="PUTapi-movies--id-"
-               value="in"
+                <input type="number" style="display: none"
+               step="any"               name="id"                data-endpoint="PUTapi-movies--id-"
+               value="2"
                data-component="url">
     <br>
-<p>The ID of the movie. Example: <code>in</code></p>
+<p>The ID of the movie. Example: <code>2</code></p>
             </div>
                             <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
         <div style=" padding-left: 28px;  clear: unset;">
@@ -1146,10 +1902,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="title"                data-endpoint="PUTapi-movies--id-"
-               value="ducimus"
+               value="ahbciuxclzqbogrk"
                data-component="body">
     <br>
-<p>Example: <code>ducimus</code></p>
+<p>Must not be greater than 255 characters. Example: <code>ahbciuxclzqbogrk</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>summary</code></b>&nbsp;&nbsp;
@@ -1157,10 +1913,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="summary"                data-endpoint="PUTapi-movies--id-"
-               value="eius"
+               value="qui"
                data-component="body">
     <br>
-<p>Example: <code>eius</code></p>
+<p>Example: <code>qui</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>cover_image</code></b>&nbsp;&nbsp;
@@ -1179,10 +1935,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="author"                data-endpoint="PUTapi-movies--id-"
-               value="vel"
+               value="iwgnus"
                data-component="body">
     <br>
-<p>Example: <code>vel</code></p>
+<p>Must not be greater than 255 characters. Example: <code>iwgnus</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>genres</code></b>&nbsp;&nbsp;
@@ -1212,10 +1968,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="imdb_rating"                data-endpoint="PUTapi-movies--id-"
-               value="at"
+               value="sit"
                data-component="body">
     <br>
-<p>Example: <code>at</code></p>
+<p>Example: <code>sit</code></p>
         </div>
         </form>
 
@@ -1232,14 +1988,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "http://localhost/api/movies/eaque" \
+    "http://localhost/api/movies/2" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/movies/eaque"
+    "http://localhost/api/movies/2"
 );
 
 const headers = {
@@ -1328,14 +2084,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
                         <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>id</code></b>&nbsp;&nbsp;
-<small>string</small>&nbsp;
+<small>integer</small>&nbsp;
  &nbsp;
-                <input type="text" style="display: none"
-                              name="id"                data-endpoint="DELETEapi-movies--id-"
-               value="eaque"
+                <input type="number" style="display: none"
+               step="any"               name="id"                data-endpoint="DELETEapi-movies--id-"
+               value="2"
                data-component="url">
     <br>
-<p>The ID of the movie. Example: <code>eaque</code></p>
+<p>The ID of the movie. Example: <code>2</code></p>
             </div>
                     </form>
 

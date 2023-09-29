@@ -26,7 +26,7 @@ endpoints:
         name: email
         description: ''
         required: true
-        example: assumenda
+        example: est
         type: string
         enumValues: []
         custom: []
@@ -34,13 +34,13 @@ endpoints:
         name: password
         description: ''
         required: true
-        example: id
+        example: earum
         type: string
         enumValues: []
         custom: []
     cleanBodyParameters:
-      email: assumenda
-      password: id
+      email: est
+      password: earum
     fileParameters: []
     responses: []
     responseFields: []
@@ -74,7 +74,7 @@ endpoints:
         name: name
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: nqkbyzaddivglynkxcbsq
+        example: ktmwjbsdgmawttnsuqmz
         type: string
         enumValues: []
         custom: []
@@ -82,7 +82,7 @@ endpoints:
         name: email
         description: 'Must be a valid email address. Must not be greater than 255 characters.'
         required: true
-        example: foconnell@example.net
+        example: devante10@example.net
         type: string
         enumValues: []
         custom: []
@@ -90,14 +90,171 @@ endpoints:
         name: password
         description: 'Must be at least 6 characters.'
         required: true
-        example: ;n8)2CgN(
+        example: '%NZkkw^]Dt9_o'
         type: string
         enumValues: []
         custom: []
     cleanBodyParameters:
-      name: nqkbyzaddivglynkxcbsq
-      email: foconnell@example.net
-      password: ;n8)2CgN(
+      name: ktmwjbsdgmawttnsuqmz
+      email: devante10@example.net
+      password: '%NZkkw^]Dt9_o'
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: api/movies
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Display a listing of the resource.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '[{"id":2,"title":"Titanic (1997)","summary":"Consequatur molestiae in non velit et. Sint ducimus ex reprehenderit. Aliquam ex nesciunt ut in.","cover_image_url":null,"cover_image_name":null,"author":"James Cameron","genres":"Malika Crona ,Annabel Fay","tags":"Prof. Irma Berge DVM ,Bobby Koelpin Jr.","imdb_rating":2.3,"created_at":null,"updated_at":null,"comments":[]},{"id":3,"title":"The Shawshank Redemption (1994)","summary":"In possimus et sit officiis. Rem eligendi mollitia odio vel expedita voluptate qui mollitia.","cover_image_url":null,"cover_image_name":null,"author":"Frank Darabont","genres":"Ryann Abernathy DDS ,Meta Hand","tags":"Luisa Lang ,Fausto Schowalter","imdb_rating":6.9,"created_at":null,"updated_at":null,"comments":[]},{"id":4,"title":"The Dark Knight","summary":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae rem eum mollitia ipsam dignissimos tempora hic nam numquam reiciendis quae, enim laborum ducimus perferendis eius placeat aut harum qui. Commodi!","cover_image_url":null,"cover_image_name":null,"author":"Chritopher Nolan","genres":"Action, Adventure","tags":"action, christopher nolan movie","imdb_rating":9.9,"created_at":null,"updated_at":"2023-09-29T02:10:43.000000Z","comments":[{"id":1,"movie_id":4,"commenter_name":"Khant","commenter_email":"khantzaw@gmail.com","comment_text":"This is the best movie ok !","created_at":"2023-09-29T02:13:14.000000Z","updated_at":"2023-09-29T02:13:14.000000Z"}]},{"id":5,"title":"Schindler''s List (1993)","summary":"Ut et ducimus minima laboriosam unde. Nihil temporibus minus modi. Sit qui voluptate asperiores.","cover_image_url":null,"cover_image_name":null,"author":"Steven Spielberg","genres":"Dr. Elena Sauer ,Henry Gorczany","tags":"Hector Morar I ,Bennie Hahn","imdb_rating":9.9,"created_at":null,"updated_at":null,"comments":[]},{"id":6,"title":"Pulp Fiction (1994)","summary":"Adipisci enim est dolore aliquid aut. Voluptatem aperiam accusantium recusandae fuga eos.","cover_image_url":null,"cover_image_name":null,"author":"Quentin Tarantino","genres":"Lily Wuckert ,Letha Brekke","tags":"Garrison Jerde PhD ,Delaney Conroy","imdb_rating":9.3,"created_at":null,"updated_at":null,"comments":[]},{"id":7,"title":"Forrest Gump (1994)","summary":"Et aut officiis commodi itaque tempora. Voluptas ut eius ut quo dolor laudantium et.","cover_image_url":null,"cover_image_name":null,"author":"Robert Zemeckis","genres":"Lloyd Huel ,Dr. Abelardo Koepp II","tags":"Lucas Schiller ,Prof. Nayeli Dibbert III","imdb_rating":5.4,"created_at":null,"updated_at":null,"comments":[]},{"id":8,"title":"The Matrix (1999)","summary":"Nulla laudantium omnis reiciendis sed sequi. Atque nihil voluptas vitae dicta quod sed iusto natus.","cover_image_url":null,"cover_image_name":null,"author":"The Wachowskis","genres":"Carmelo Rippin ,Ms. Palma Lebsack","tags":"Wilfredo Hagenes IV ,Dean Cummings","imdb_rating":4.8,"created_at":null,"updated_at":null,"comments":[]},{"id":9,"title":"Jurassic Park (1993)","summary":"Ut officiis suscipit magni a nam accusamus. Eos itaque sint magnam dicta officia.","cover_image_url":null,"cover_image_name":null,"author":"Steven Spielberg","genres":"Murl Lynch ,Kamille Hirthe","tags":"Marjorie Reilly ,Raegan Berge","imdb_rating":9.9,"created_at":null,"updated_at":null,"comments":[]},{"id":10,"title":"Inception (2010)","summary":"Illo sed magni aliquam quidem. Voluptas illo maiores libero nihil. Itaque omnis odit deserunt iste.","cover_image_url":null,"cover_image_name":null,"author":"Christopher Nolan","genres":"Isaias Botsford ,Prof. Alyson Schamberger","tags":"Quinn Rau ,Emmie Kshlerin","imdb_rating":2.1,"created_at":null,"updated_at":null,"comments":[]},{"id":11,"title":"Apocalypse Now (1979)","summary":"Et asperiores omnis ut eos maiores non eligendi dolor. Illo sit exercitationem rem corrupti ipsum.","cover_image_url":null,"cover_image_name":null,"author":"Francis Ford Coppola","genres":"Vergie Muller,Eliane Swaniawski","tags":"Mrs. Elta Murphy V,Obie Nitzsche","imdb_rating":3.2,"created_at":null,"updated_at":null,"comments":[]},{"id":12,"title":"Avatar (2009)","summary":"Illum placeat aut aliquid cupiditate error. Perferendis unde unde ut et et labore.","cover_image_url":null,"cover_image_name":null,"author":"James Cameron","genres":"Tania Considine,Olin Howe","tags":"Keely Stehr,Celine Wiza","imdb_rating":7.1,"created_at":null,"updated_at":null,"comments":[]},{"id":13,"title":"The Green Mile (1999)","summary":"Cum impedit et soluta sequi veniam voluptas magnam. Minus et quis enim tenetur esse assumenda.","cover_image_url":null,"cover_image_name":null,"author":"Frank Darabont","genres":"Dr. Lori Huel,Patricia West","tags":"Fannie Ziemann DDS,Alta Klocko","imdb_rating":1.4,"created_at":null,"updated_at":null,"comments":[]},{"id":14,"title":"Interstellar (2014)","summary":"Minus qui adipisci harum facere. Aut vel quos deleniti eius. Aut amet qui non assumenda soluta est.","cover_image_url":null,"cover_image_name":null,"author":"Christopher Nolan","genres":"Marcelle Sauer,Antonetta Baumbach","tags":"Mikayla Halvorson,Dr. Nico Pouros III","imdb_rating":3.5,"created_at":null,"updated_at":null,"comments":[]},{"id":15,"title":"E.T. the Extra-Terrestrial (1982)","summary":"Odio neque est fugit voluptatem dolorum. Quia autem nulla eveniet quia. Minus est neque quae.","cover_image_url":null,"cover_image_name":null,"author":"Steven Spielberg","genres":"Bridgette Osinski,Myles Blanda","tags":"Felicia Padberg,Prof. Domenico Reinger DDS","imdb_rating":7.4,"created_at":null,"updated_at":null,"comments":[]},{"id":16,"title":"Django Unchained (2012)","summary":"Dolorum non iste et assumenda non. Ut assumenda labore provident iusto quasi.","cover_image_url":null,"cover_image_name":null,"author":"Quentin Tarantino","genres":"Alvena Hand,Lauren Dach","tags":"Aiden Upton,Dr. Leanna McLaughlin III","imdb_rating":2.6,"created_at":null,"updated_at":null,"comments":[]},{"id":17,"title":"Cast Away (2000)","summary":"Necessitatibus quasi mollitia aut omnis quae pariatur velit. Nisi ratione atque aut facere error.","cover_image_url":null,"cover_image_name":null,"author":"Robert Zemeckis","genres":"Eda Lind,Dagmar Kautzer","tags":"Thad Hill,Jeramy Hand","imdb_rating":2,"created_at":null,"updated_at":null,"comments":[]},{"id":18,"title":"The Matrix (1999)","summary":"Harum rerum nesciunt aliquid eveniet maiores et. Placeat minima est ut dolor.","cover_image_url":null,"cover_image_name":null,"author":"The Wachowskis","genres":"Kariane Abbott Sr.,Prof. Sierra Johns","tags":"Idella Glover,Lura Marvin MD","imdb_rating":8.4,"created_at":null,"updated_at":null,"comments":[]},{"id":19,"title":"Saving Private Ryan (1998)","summary":"Aut id in voluptatum delectus iste at. Id in adipisci id totam. Aut voluptatibus ipsum et quo.","cover_image_url":null,"cover_image_name":null,"author":"Steven Spielberg","genres":"Mrs. Hanna Bosco DVM,Dr. Dylan Block","tags":"Prof. Jaycee Stehr III,Dr. Aracely Padberg Jr.","imdb_rating":7.4,"created_at":null,"updated_at":null,"comments":[]},{"id":20,"title":"Dunkirk (2017)","summary":"Et totam magni iste temporibus eum. Et eaque amet voluptatem omnis dolores et.","cover_image_url":null,"cover_image_name":null,"author":"Christopher Nolan","genres":"Merlin Gerlach,Susie Murray","tags":"Elise Becker,Hans O''Kon","imdb_rating":7.4,"created_at":null,"updated_at":null,"comments":[]},{"id":21,"title":"Mr. Bean","summary":"If I let you go, I would never know","cover_image_url":"http:\/\/localhost:8000\/storage\/65162965ea1a4_v58-2456211.jpg","cover_image_name":"65162965ea1a4_v58-2456211.jpg","author":"Christopher Nolan","genres":"Comedy,Drama","tags":"Comedy movie","imdb_rating":7.6,"created_at":"2023-09-29T01:33:26.000000Z","updated_at":"2023-09-29T01:33:26.000000Z","comments":[]},{"id":22,"title":"Following (1998)","summary":"Explicabo cupiditate eum doloremque sapiente voluptate. Illo architecto a debitis perspiciatis.","cover_image_url":null,"cover_image_name":null,"author":"Francis Ford Coppola","genres":"Hiram Rice,Eleonore Marvin","tags":"Ms. Rylee Wintheiser,Miss Estefania Eichmann Jr.","imdb_rating":2.6,"created_at":null,"updated_at":null,"comments":[]},{"id":23,"title":"Memento (2000)","summary":"Ut est hic beatae et autem et. At quasi rerum atque deserunt ea voluptas.","cover_image_url":null,"cover_image_name":null,"author":"James Cameron","genres":"Sincere Lemke,Virginie Dach","tags":"Jermain O''Kon I,Ms. Verdie Lynch V","imdb_rating":8,"created_at":null,"updated_at":null,"comments":[]},{"id":24,"title":"The Prestige (2006)","summary":"Et nihil beatae ut deleniti ab aut. Laudantium ea assumenda laudantium aut. Voluptas est a et in.","cover_image_url":null,"cover_image_name":null,"author":"Frank Darabont","genres":"Rosalind Wyman,Marielle Kirlin DDS","tags":"Evie Johnston,Miss Caroline Schiller V","imdb_rating":9.5,"created_at":null,"updated_at":null,"comments":[]},{"id":25,"title":"Batman Begins (2005)","summary":"Et ipsam vitae sapiente eius. Ut corrupti vero repellat dicta illo.","cover_image_url":null,"cover_image_name":null,"author":"Christopher Nolan","genres":"Aurelie Ryan Jr.,Abner Lindgren","tags":"Prof. Timmy Fadel Sr.,Davonte Waelchi","imdb_rating":1.5,"created_at":null,"updated_at":null,"comments":[]},{"id":26,"title":"The Dark Knight (2008)","summary":"Nesciunt accusantium omnis sunt rem et molestiae. Sapiente odit et non dolorem in.","cover_image_url":null,"cover_image_name":null,"author":"Steven Spielberg","genres":"Autumn Muller DVM,Prof. Otilia Lindgren","tags":"Prof. Jayme Reichel,Darron Hane","imdb_rating":5.1,"created_at":null,"updated_at":null,"comments":[]},{"id":27,"title":"Inception (2010)","summary":"Voluptatibus ad suscipit officiis sint cum quam. Soluta ut qui asperiores quos voluptatum alias.","cover_image_url":null,"cover_image_name":null,"author":"Quentin Tarantino","genres":"Oral Turner,Nayeli Johns IV","tags":"Eloy Carroll,Annabel Lakin","imdb_rating":4,"created_at":null,"updated_at":null,"comments":[]},{"id":28,"title":"The Dark Knight Rises (2012)","summary":"Ut dolore sit aut. Quisquam commodi magnam maiores quasi enim. Dolorem aut ratione nobis ex hic.","cover_image_url":null,"cover_image_name":null,"author":"Robert Zemeckis","genres":"Kacey Casper,Maverick O''Conner","tags":"Hermann Farrell,Ms. Alberta Watsica","imdb_rating":6.9,"created_at":null,"updated_at":null,"comments":[]},{"id":29,"title":"Interstellar (2014)","summary":"Ducimus aut quas esse sequi omnis et. Dignissimos et delectus nulla. Rem incidunt unde quo.","cover_image_url":null,"cover_image_name":null,"author":"The Wachowskis","genres":"Dr. Abe Rohan V,Diana Rutherford","tags":"Carolyn Carter,Zetta Dicki","imdb_rating":6.3,"created_at":null,"updated_at":null,"comments":[]},{"id":30,"title":"Dunkirk (2017)","summary":"Sunt ipsum ut voluptatibus. Est ipsa odio quia. Eligendi magnam inventore soluta.","cover_image_url":null,"cover_image_name":null,"author":"Steven Spielberg","genres":"Trever Quitzon,Jean Medhurst","tags":"Maximo Weissnat,Willa Rippin","imdb_rating":2.3,"created_at":null,"updated_at":null,"comments":[]},{"id":31,"title":"Tenet (2020)","summary":"Sed vitae quas molestias eveniet. Ipsum qui ipsam in ab sed. Porro qui deserunt id non.","cover_image_url":null,"cover_image_name":null,"author":"Christopher Nolan","genres":"Dr. Wilburn Borer Sr.,Miss Lori Hahn","tags":"Kiley Stark,Willa Grady Jr.","imdb_rating":4.1,"created_at":null,"updated_at":null,"comments":[]},{"id":32,"title":"Following (1998)","summary":"Tempora aut aspernatur repudiandae. Sint accusamus provident quibusdam officia pariatur sint nobis.","cover_image_url":null,"cover_image_name":null,"author":"Christopher Nolan","genres":"Shannon Mosciski,Alf Tremblay","tags":"Eulah Lehner,Hanna Blick","imdb_rating":5.2,"created_at":null,"updated_at":null,"comments":[]},{"id":33,"title":"Memento (2000)","summary":"Inventore sit cumque aliquam omnis. Omnis perspiciatis exercitationem ab quisquam quam quia.","cover_image_url":null,"cover_image_name":null,"author":"Christopher Nolan","genres":"Omer Konopelski,Aidan Towne","tags":"Raymond Koch,Deonte Legros PhD","imdb_rating":5.1,"created_at":null,"updated_at":null,"comments":[]},{"id":34,"title":"The Prestige (2006)","summary":"Rem et ut ipsum. Consequatur est et voluptatem aliquid et.","cover_image_url":null,"cover_image_name":null,"author":"Christopher Nolan","genres":"Grant Jakubowski,Cara Streich","tags":"Mrs. Lola Smith,Rebeca Mann","imdb_rating":6,"created_at":null,"updated_at":null,"comments":[]},{"id":35,"title":"Batman Begins (2005)","summary":"Quas consequatur placeat pariatur qui et accusamus. Minus sed et assumenda sint.","cover_image_url":null,"cover_image_name":null,"author":"Christopher Nolan","genres":"Kendrick Lueilwitz,Casper Spencer","tags":"Aniya Cummings,Brad Nikolaus","imdb_rating":9.7,"created_at":null,"updated_at":null,"comments":[]},{"id":36,"title":"The Dark Knight (2008)","summary":"Id labore iure rem sed est voluptatum soluta. Quis recusandae asperiores qui officia.","cover_image_url":null,"cover_image_name":null,"author":"Christopher Nolan","genres":"Ernestina Botsford V,Stanford Moen","tags":"Luigi Wisoky,Brain Lockman","imdb_rating":9.9,"created_at":null,"updated_at":null,"comments":[]},{"id":37,"title":"Inception (2010)","summary":"Nulla magni praesentium nobis id optio. Iusto unde soluta est temporibus consectetur qui nisi.","cover_image_url":null,"cover_image_name":null,"author":"Christopher Nolan","genres":"Jillian Lemke,Miss Audrey Conn","tags":"Ron Gislason,Milton Bruen","imdb_rating":4.6,"created_at":null,"updated_at":null,"comments":[]},{"id":38,"title":"The Dark Knight Rises (2012)","summary":"Magnam voluptatem aut et debitis labore et. Laborum sit qui commodi.","cover_image_url":null,"cover_image_name":null,"author":"Christopher Nolan","genres":"Prof. Weston Pouros I,Mr. Devan Parisian MD","tags":"Patrick Ward,Prof. Heaven Bashirian","imdb_rating":1.7,"created_at":null,"updated_at":null,"comments":[]},{"id":39,"title":"Interstellar (2014)","summary":"Excepturi consequatur expedita dolor maiores laudantium sit voluptas. Reiciendis est sapiente in.","cover_image_url":null,"cover_image_name":null,"author":"Christopher Nolan","genres":"Florencio Romaguera,Harley Orn","tags":"Erna Cartwright,Vergie Collier","imdb_rating":8.3,"created_at":null,"updated_at":null,"comments":[]},{"id":40,"title":"Dunkirk (2017)","summary":"Sapiente delectus qui iure est facilis. Rerum voluptatibus laborum voluptatem sit.","cover_image_url":null,"cover_image_name":null,"author":"Christopher Nolan","genres":"Mrs. Bianka Simonis,Mr. Leonel Roob","tags":"Mr. Felton Considine III,Idella Haag","imdb_rating":6.8,"created_at":null,"updated_at":null,"comments":[]},{"id":41,"title":"Tenet (2020)","summary":"Debitis et illo voluptas minus. Rerum illum in sint. Sit eaque ducimus aperiam facere quos.","cover_image_url":null,"cover_image_name":null,"author":"Christopher Nolan","genres":"Keon Spinka,Lura Armstrong","tags":"Thea Watsica,Alexa Deckow","imdb_rating":6.7,"created_at":null,"updated_at":null,"comments":[]}]'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '59'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/movies/{movie}'
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Display the specified resource.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      movie:
+        name: movie
+        description: 'The movie.'
+        required: true
+        example: 2
+        type: integer
+        enumValues: []
+        custom: []
+    cleanUrlParameters:
+      movie: 2
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"data":{"id":2,"title":"Titanic (1997)","summary":"Consequatur molestiae in non velit et. Sint ducimus ex reprehenderit. Aliquam ex nesciunt ut in.","cover_image":null,"cover_image_url":null,"author":"James Cameron","genres":"Malika Crona ,Annabel Fay","tags":"Prof. Irma Berge DVM ,Bobby Koelpin Jr.","imdb_rating":2.3,"pdf_download_link":"http:\/\/localhost\/movies\/2\/download-pdf","related_movies":[],"comments":[]}}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '58'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: 'api/movies/{movie}/comments'
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'create a new comment for the movie'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      movie:
+        name: movie
+        description: 'The movie.'
+        required: true
+        example: 2
+        type: integer
+        enumValues: []
+        custom: []
+    cleanUrlParameters:
+      movie: 2
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      commenter_name:
+        name: commenter_name
+        description: 'Must not be greater than 255 characters.'
+        required: true
+        example: qxpwzusxrjlgfyvjhusadsyre
+        type: string
+        enumValues: []
+        custom: []
+      commenter_email:
+        name: commenter_email
+        description: 'Must be a valid email address. Must not be greater than 255 characters.'
+        required: true
+        example: bkohler@example.net
+        type: string
+        enumValues: []
+        custom: []
+      comment_text:
+        name: comment_text
+        description: ''
+        required: true
+        example: eius
+        type: string
+        enumValues: []
+        custom: []
+    cleanBodyParameters:
+      commenter_name: qxpwzusxrjlgfyvjhusadsyre
+      commenter_email: bkohler@example.net
+      comment_text: eius
     fileParameters: []
     responses: []
     responseFields: []
@@ -138,45 +295,6 @@ endpoints:
     custom: []
   -
     httpMethods:
-      - GET
-    uri: api/movies
-    metadata:
-      groupName: Endpoints
-      groupDescription: ''
-      subgroup: ''
-      subgroupDescription: ''
-      title: 'Display a listing of the resource.'
-      description: ''
-      authenticated: false
-      custom: []
-    headers:
-      Content-Type: application/json
-      Accept: application/json
-    urlParameters: []
-    cleanUrlParameters: []
-    queryParameters: []
-    cleanQueryParameters: []
-    bodyParameters: []
-    cleanBodyParameters: []
-    fileParameters: []
-    responses:
-      -
-        status: 401
-        content: '{"message":"Unauthenticated."}'
-        headers:
-          cache-control: 'no-cache, private'
-          content-type: application/json
-          access-control-allow-origin: '*'
-        description: null
-        custom: []
-    responseFields: []
-    auth: []
-    controller: null
-    method: null
-    route: null
-    custom: []
-  -
-    httpMethods:
       - POST
     uri: api/movies
     metadata:
@@ -198,9 +316,9 @@ endpoints:
     bodyParameters:
       title:
         name: title
-        description: ''
+        description: 'Must not be greater than 255 characters.'
         required: true
-        example: vel
+        example: yatbitiqfczsfebb
         type: string
         enumValues: []
         custom: []
@@ -208,7 +326,7 @@ endpoints:
         name: summary
         description: ''
         required: true
-        example: quas
+        example: delectus
         type: string
         enumValues: []
         custom: []
@@ -222,9 +340,9 @@ endpoints:
         custom: []
       author:
         name: author
-        description: ''
+        description: 'Must not be greater than 255 characters.'
         required: true
-        example: aut
+        example: bnspokpijhownmqmrf
         type: string
         enumValues: []
         custom: []
@@ -248,67 +366,19 @@ endpoints:
         name: imdb_rating
         description: ''
         required: true
-        example: enim
+        example: labore
         type: string
         enumValues: []
         custom: []
     cleanBodyParameters:
-      title: vel
-      summary: quas
-      author: aut
+      title: yatbitiqfczsfebb
+      summary: delectus
+      author: bnspokpijhownmqmrf
       genres: []
       tags: []
-      imdb_rating: enim
+      imdb_rating: labore
     fileParameters: []
     responses: []
-    responseFields: []
-    auth: []
-    controller: null
-    method: null
-    route: null
-    custom: []
-  -
-    httpMethods:
-      - GET
-    uri: 'api/movies/{id}'
-    metadata:
-      groupName: Endpoints
-      groupDescription: ''
-      subgroup: ''
-      subgroupDescription: ''
-      title: 'Display the specified resource.'
-      description: ''
-      authenticated: false
-      custom: []
-    headers:
-      Content-Type: application/json
-      Accept: application/json
-    urlParameters:
-      id:
-        name: id
-        description: 'The ID of the movie.'
-        required: true
-        example: est
-        type: string
-        enumValues: []
-        custom: []
-    cleanUrlParameters:
-      id: est
-    queryParameters: []
-    cleanQueryParameters: []
-    bodyParameters: []
-    cleanBodyParameters: []
-    fileParameters: []
-    responses:
-      -
-        status: 401
-        content: '{"message":"Unauthenticated."}'
-        headers:
-          cache-control: 'no-cache, private'
-          content-type: application/json
-          access-control-allow-origin: '*'
-        description: null
-        custom: []
     responseFields: []
     auth: []
     controller: null
@@ -337,20 +407,20 @@ endpoints:
         name: id
         description: 'The ID of the movie.'
         required: true
-        example: in
-        type: string
+        example: 2
+        type: integer
         enumValues: []
         custom: []
     cleanUrlParameters:
-      id: in
+      id: 2
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters:
       title:
         name: title
-        description: ''
+        description: 'Must not be greater than 255 characters.'
         required: true
-        example: ducimus
+        example: ahbciuxclzqbogrk
         type: string
         enumValues: []
         custom: []
@@ -358,7 +428,7 @@ endpoints:
         name: summary
         description: ''
         required: true
-        example: eius
+        example: qui
         type: string
         enumValues: []
         custom: []
@@ -372,9 +442,9 @@ endpoints:
         custom: []
       author:
         name: author
-        description: ''
+        description: 'Must not be greater than 255 characters.'
         required: true
-        example: vel
+        example: iwgnus
         type: string
         enumValues: []
         custom: []
@@ -398,17 +468,17 @@ endpoints:
         name: imdb_rating
         description: ''
         required: true
-        example: at
+        example: sit
         type: string
         enumValues: []
         custom: []
     cleanBodyParameters:
-      title: ducimus
-      summary: eius
-      author: vel
+      title: ahbciuxclzqbogrk
+      summary: qui
+      author: iwgnus
       genres: []
       tags: []
-      imdb_rating: at
+      imdb_rating: sit
     fileParameters: []
     responses: []
     responseFields: []
@@ -438,12 +508,12 @@ endpoints:
         name: id
         description: 'The ID of the movie.'
         required: true
-        example: eaque
-        type: string
+        example: 2
+        type: integer
         enumValues: []
         custom: []
     cleanUrlParameters:
-      id: eaque
+      id: 2
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

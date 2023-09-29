@@ -35,7 +35,7 @@ class MovieController extends Controller
     public function store(MovieFormRequest $request)
     {
         $genres = implode(',', $request->input('genres'));
-        $tags = implode(',', $request->validated('tags'));
+        $tags = implode(',', $request->input('tags'));
 
         $data = [
             'title' => $request->input('title'),

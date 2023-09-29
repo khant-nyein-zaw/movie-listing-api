@@ -25,9 +25,7 @@ class MovieFormRequest extends FormRequest
     public function rules(): array
     {
         switch ($this->method()) {
-            case 'PUT': {
-                    return [];
-                }
+            case 'PUT':
             case 'POST': {
                     return [
                         'title' => ['required', 'max:255', 'unique:movies,title,' . $this->route('movie')],
