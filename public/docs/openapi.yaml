@@ -1,0 +1,252 @@
+openapi: 3.0.3
+info:
+  title: Laravel
+  description: ''
+  version: 1.0.0
+servers:
+  -
+    url: 'http://localhost'
+paths:
+  /api/login:
+    post:
+      summary: ''
+      operationId: postApiLogin
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                  description: ''
+                  example: assumenda
+                password:
+                  type: string
+                  description: ''
+                  example: id
+              required:
+                - email
+                - password
+      security: []
+  /api/register:
+    post:
+      summary: ''
+      operationId: postApiRegister
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: nqkbyzaddivglynkxcbsq
+                email:
+                  type: string
+                  description: 'Must be a valid email address. Must not be greater than 255 characters.'
+                  example: foconnell@example.net
+                password:
+                  type: string
+                  description: 'Must be at least 6 characters.'
+                  example: ;n8)2CgN(
+              required:
+                - name
+                - email
+                - password
+      security: []
+  /api/logout:
+    post:
+      summary: ''
+      operationId: postApiLogout
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+  /api/movies:
+    get:
+      summary: 'Display a listing of the resource.'
+      operationId: displayAListingOfTheResource
+      description: ''
+      parameters: []
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
+      tags:
+        - Endpoints
+      security: []
+    post:
+      summary: 'Store a newly created resource in storage.'
+      operationId: storeANewlyCreatedResourceInStorage
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                title:
+                  type: string
+                  description: ''
+                  example: vel
+                summary:
+                  type: string
+                  description: ''
+                  example: quas
+                cover_image:
+                  type: string
+                  description: ''
+                  example: null
+                author:
+                  type: string
+                  description: ''
+                  example: aut
+                genres:
+                  type: object
+                  description: ''
+                  example: []
+                  properties: {  }
+                tags:
+                  type: object
+                  description: ''
+                  example: []
+                  properties: {  }
+                imdb_rating:
+                  type: string
+                  description: ''
+                  example: enim
+              required:
+                - title
+                - summary
+                - author
+                - genres
+                - tags
+                - imdb_rating
+      security: []
+  '/api/movies/{id}':
+    get:
+      summary: 'Display the specified resource.'
+      operationId: displayTheSpecifiedResource
+      description: ''
+      parameters: []
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
+      tags:
+        - Endpoints
+      security: []
+    put:
+      summary: 'Update the specified resource in storage.'
+      operationId: updateTheSpecifiedResourceInStorage
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                title:
+                  type: string
+                  description: ''
+                  example: ducimus
+                summary:
+                  type: string
+                  description: ''
+                  example: eius
+                cover_image:
+                  type: string
+                  description: ''
+                  example: null
+                author:
+                  type: string
+                  description: ''
+                  example: vel
+                genres:
+                  type: object
+                  description: ''
+                  example: []
+                  properties: {  }
+                tags:
+                  type: object
+                  description: ''
+                  example: []
+                  properties: {  }
+                imdb_rating:
+                  type: string
+                  description: ''
+                  example: at
+              required:
+                - title
+                - summary
+                - author
+                - genres
+                - tags
+                - imdb_rating
+      security: []
+    delete:
+      summary: 'Remove the specified resource from storage.'
+      operationId: removeTheSpecifiedResourceFromStorage
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the movie.'
+        example: est
+        required: true
+        schema:
+          type: string
+tags:
+  -
+    name: Endpoints
+    description: ''
