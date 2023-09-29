@@ -68,7 +68,7 @@ class MovieSeeder extends Seeder
             DB::table('movies')->insert([
                 'title' => $movies[$index],
                 'summary' => fake()->text(100),
-                'author' => $directors,
+                'author' => $directors[$index],
                 'genres' => '' . fake()->name() . ',' . fake()->name() . '',
                 'tags' => '' . fake()->name() . ',' . fake()->name() . '',
                 'imdb_rating' => fake()->randomFloat(1, 1, 10)
