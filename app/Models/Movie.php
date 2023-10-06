@@ -12,7 +12,7 @@ class Movie extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['title', 'summary', 'cover_image_url', 'cover_image_name', 'author', 'genres', 'tags', 'imdb_rating'];
+    protected $fillable = ['title', 'summary', 'cover_image_url', 'cover_image_name', 'author', 'genres', 'tags', 'imdb_rating','user_id'];
 
     public function comments(): HasMany
     {
@@ -30,4 +30,9 @@ class Movie extends Model
     {
         return $this->relatedMovies()->limit(7)->get();
     }
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
 }
