@@ -15,6 +15,7 @@ class UserController extends Controller
     {
            try {
             $user = User::findOrFail($id);
+            $user->created_movie_count=count($user->movies()->get());
             return response()->json(['user'=>$user]);
             
             } catch (ModelNotFoundException $e) {

@@ -5,7 +5,9 @@ namespace App\Http\Controllers\API;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\MovieFormRequest;
 use App\Http\Resources\MovieDetailResource;
+use App\Models\User;
 use App\Models\Movie;
+
 use App\Traits\RelatedMoviesTrait;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
@@ -140,5 +142,14 @@ class MovieController extends Controller
 
         $request->file('cover_image')->storeAs('public', $newFileName);
         return $newFileName;
+    }
+    // $Id=UserId
+    public function getRelatedMovies($id){
+        $user=User::find($id);
+        $user->related_movies=$user->movies()->get();
+        return response()->json([
+            'data'=>$user
+        ],200);
+
     }
 }
