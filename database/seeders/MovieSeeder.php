@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\DB;
 
 class MovieSeeder extends Seeder
@@ -73,7 +74,8 @@ class MovieSeeder extends Seeder
                 'author' => $directors[$index],
                 'genres' => '' . fake()->name() . ',' . fake()->name() . '',
                 'tags' => '' . fake()->name() . ',' . fake()->name() . '',
-                'imdb_rating' => fake()->randomFloat(1, 1, 10)
+                'imdb_rating' => fake()->randomFloat(1, 1, 10),
+                'created_at'=>Carbon::now()
             ]);
         }
     }

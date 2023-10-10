@@ -23,8 +23,12 @@ class MovieDetailResource extends JsonResource
             'cover_image' => $this->cover_image_name,
             'cover_image_url' => $this->cover_image_url,
             'author' => $this->author,
+            'user'=>$this->user(function($query){
+                       $query->select('id', 'name', 'email');
+                   })->get(),
             'genres' => $this->genres,
             'tags' => $this->tags,
+            'created_at'=>$this->created_at->format('d-M-Y'),
             'imdb_rating' => $this->imdb_rating,
             'pdf_download_link' => route('movie.download.pdf', ['movie' => $this->id]),
             'related_movies' => $this->getRelatedMovies(),
