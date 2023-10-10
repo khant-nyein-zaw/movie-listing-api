@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('cover_image_url')->nullable();
             $table->string('cover_image_name')->nullable();
             $table->string('author');
+            $table->string('user_id')->refrences('id')->on('users');
             $table->text('genres');
             $table->text('tags');
             $table->float('imdb_rating');

@@ -21,7 +21,9 @@ class MovieController extends Controller
      */
     public function index()
     {
-        $movies = Movie::with(['comments'])->get();
+        $movies = Movie::with(['comments','user' => function ($query) {
+            $query->select('id', 'name', 'email');
+        }])->get();
 
         return new JsonResponse(
             data: $movies,

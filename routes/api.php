@@ -3,6 +3,7 @@
 use App\Http\Controllers\API\AuthController;
 use App\Http\Controllers\API\MovieCommentController;
 use App\Http\Controllers\API\MovieController;
+use App\Http\Controllers\API\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,6 +22,8 @@ Route::post('register', [AuthController::class, 'register']);
 
 Route::get('movies', [MovieController::class, 'index']);
 Route::get('movies/{movie}', [MovieController::class, 'show']);
+
+Route::get('users/public_profile/{id}',[UserController::class,'getPublicProfile']);
 
 Route::post('movies/{movie}/comments', [MovieCommentController::class, 'store']);
 

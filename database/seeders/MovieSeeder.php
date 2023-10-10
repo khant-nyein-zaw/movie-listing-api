@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use Carbon\Carbon;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\DB;
 
 class MovieSeeder extends Seeder
@@ -68,15 +69,19 @@ class MovieSeeder extends Seeder
         foreach (range(0, 9) as $index) {
             DB::table('movies')->insert([
                 'title' => $movies[$index],
-                'summary' => fake()->paragraph(30),
-                'cover_image_url' => fake()->imageUrl(''),
-                // 'cover_image_name' => fake()->image,
+
+                'summary' => fake()->text(100),
+                'user_id'=>rand(1,4),
+                'cover_image_url'=>fake()->imageUrl(),
+
                 'author' => $directors[$index],
                 'genres' => '' . fake()->name() . ',' . fake()->name() . '',
                 'tags' => '' . fake()->name() . ',' . fake()->name() . '',
                 'imdb_rating' => fake()->randomFloat(1, 1, 10),
+
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now()
+
             ]);
         }
     }
