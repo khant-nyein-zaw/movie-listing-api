@@ -33,7 +33,7 @@ class AuthController extends Controller
         $user = User::create($request->toArray());
 
         $token = $user->createToken('My Token')->accessToken;
-        $response = ['token' => $token];
+        $response = ['token' => $token,'status'=>'success'];
 
 
         return response()->json($response, 200);
